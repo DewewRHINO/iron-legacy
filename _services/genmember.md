@@ -10,7 +10,6 @@ We work alongside our community to support underprivileged students and their pu
 
 # General requirements for all open positions:
 
-
 - Meet at least once every two weeks over Zoom, Discord, or in person
 - Basic technical proficiency with Google tools (Sheets, Drive, Forms, Docs, etc.)
 - Access to a mobile phone
@@ -27,3 +26,4 @@ We work alongside our community to support underprivileged students and their pu
 
 Iron Legacy Foundation is a certified 501(c)3 organization and no goods or monetary value is exchanged for services at this time.
 
+You can find the recruitment form [here](https://docs.google.com/forms/d/e/1FAIpQLSeTACrtDORXEOjBM03zFhnL7fEWiTfP7WflwYx_Pcpma9k8mQ/viewform)

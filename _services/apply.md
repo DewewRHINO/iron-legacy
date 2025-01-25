@@ -5,6 +5,7 @@ weight: 4
 ---
 
 **$500 scholarship** opportunity awarded to high school seniors from La Puente.  
+### **Applications open in February 2025!**  
 
 Aims to provide financial assistance to low-income students in the pursuit of higher education.
 
@@ -14,7 +15,6 @@ Aims to provide financial assistance to low-income students in the pursuit of hi
 - Financial Need  
 - Pursuing post-secondary education  
 
-### **Applications open in February 2025!**  
 ---
 ## FAQ
 
