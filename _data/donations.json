@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Scholarship Donations",
+    "description": "Donate to Iron Legacy!",
+    "image": {
+      "url": "images/Scholarship-Donation.png",
+      "width": 160,
+      "height": 160
+    },
+    "link": "https://tr.ee/xikcMsUtNq"
+  },
+  {
+    "title": "Apply",
+    "description": "Get more information on who is eligble and application link.",
+    "image": {
+      "url": "images/General-Donation.png",
+      "width": 160,
+      "height": 160
+    },
+    "link": "https://www.paypal.com/US/fundraiser/charity/5300353"
+  },
+  {
+    "title": "Collaborate",
+    "description": "Join our board!",
+    "image": {
+      "url": "images/Cash&Gifts-Donation.png",
+      "width": 160,
+      "height": 160
+    },
+    "link": "https://tr.ee/_I28_x2uxF"
+  }
+]

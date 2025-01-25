@@ -30,5 +30,14 @@
 }
 
 .feature:hover{
-  transform:scale(1.15);
+  transform:scale(1.05);
+}
+
+.donations{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
 }
