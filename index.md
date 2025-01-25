@@ -1,13 +1,13 @@
 ---
-title: Jekyll Serif Theme
+title: Iron Legacy Foundation
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
+description: At the Iron Legacy Foundation, we are dedicated to empowering underprivileged students in their pursuit of higher education. By investing in the youth of our community and promoting equity, we aim to break cycles of disadvantage and create pathways to brighter, more successful futures.
+intro_image: "images/illustrations/banner-picture.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Iron Legacy Foundation
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+At the Iron Legacy Foundation, we are dedicated to empowering underprivileged students in their pursuit of higher education. By investing in the youth of our community and promoting equity, we aim to break cycles of disadvantage and create pathways to brighter, more successful futures.

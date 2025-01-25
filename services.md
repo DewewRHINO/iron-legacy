@@ -1,12 +1,12 @@
 ---
-title: Services
+title: Get Involved
 layout: services
-description: Services
-intro_image: "images/illustrations/reading.svg"
+description: Get Involved
+intro_image: "images/illustrations/banner-picture2.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Services that grow with your business
+# Be involved.
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+Starting in 2025, the team is exploring ways to enhance and strategize the original La Puente Community Scholarship while also developing a new scholarship aligned with its mission. Additionally, the team is beginning research and grant writing efforts to collaborate with the city and bring about meaningful change in the community.

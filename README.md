@@ -1,4 +1,4 @@
-# Jekyll Serif Theme
+# Iron Legacy
 
 Serif is a modern business theme for Jekyll. It contains multiple content types for a typical brochure/marketing website. The theme is fully responsive, blazing fast and artfully illustrated.
 
