@@ -1,6 +1,12 @@
 main:
-  - name: "Get Involved"
-    url: "/services/"
+  - name: "Apply"
+    url: "/services/apply/"
+    weight: 2
+  - name: "Collaborate"
+    url:  "/services/genmember/"
+    weight: 2
+  - name: "Donate"
+    url: "/services/donate/"
     weight: 2
   - name: "Team"
     url: "/team/"

@@ -7,7 +7,7 @@
       "width": 160,
       "height": 160
     },
-    "link": "https://dev.jacobjayme.xyz/services/donate/"
+    "link": "/services/donate/"
   },
   {
     "title": "Apply",
@@ -17,16 +17,16 @@
       "width": 160,
       "height": 160
     },
-    "link": "https://dev.jacobjayme.xyz/services/apply/"
+    "link": "/services/apply/"
   },
   {
-    "title": "Join",
+    "title": "Collaborate",
     "description": "Join our board!",
     "image": {
       "url": "images/Join.png",
       "width": 160,
       "height": 160
     },
-    "link": "https://dev.jacobjayme.xyz/services/genmember/"
+    "link": "services/genmember/"
   }
 ]
