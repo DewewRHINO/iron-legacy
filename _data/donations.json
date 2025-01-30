@@ -1,17 +1,17 @@
 [
   {
-    "title": "Scholarship Donations",
-    "description": "Donate to Iron Legacy!",
+    "title": "Scholarship Donation",
+    "description": "100% of donations from our Give Butter platform go directly to the scholarship pool for that year.Scholarships have a limit of $500 per student. Any excess is added to form the next scholarship.",
     "image": {
       "url": "images/Scholarship-Donation.png",
       "width": 160,
       "height": 160
     },
-    "link": "https://tr.ee/xikcMsUtNq"
+    "link": "https://givebutter.com/zyqKvb"
   },
   {
     "title": "Apply",
-    "description": "Get more information on who is eligble and application link.",
+    "description": ".ILF is always in need of direct donations. Donations to our Paypal platform go directly to organizational costs and operations. Donations assist with logistics such as: travel, monthly subscription fees, and even award plaques for scholarship recipients.",
     "image": {
       "url": "images/General-Donation.png",
       "width": 160,
@@ -21,12 +21,12 @@
   },
   {
     "title": "Collaborate",
-    "description": "Join our board!",
+    "description": "ILF accepts both checks and cash. Please complete our google form to ensure we have a record of your donation. A donation letter will be electronically provided back within 2-3 business days. *ILF also accepts gifts at its own discretion. If donating a gift please send a direct email with more details before mailing or filling out the form",
     "image": {
       "url": "images/Cash&Gifts-Donation.png",
       "width": 160,
       "height": 160
     },
-    "link": "https://tr.ee/_I28_x2uxF"
+    "link": "https://docs.google.com/forms/d/1b7Wibqzjw4DD3yTmJc926XAYcJ3s9gPvT2hGsMnan2w/viewform?edit_requested=true"
   }
 ]
