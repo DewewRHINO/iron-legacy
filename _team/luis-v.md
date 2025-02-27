@@ -7,5 +7,3 @@ linkedinurl: "https://www.linkedin.com/in/luis-velasquez-jr/"
 promoted: true
 weight: 1
 ---
-
-Mortalis.

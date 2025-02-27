@@ -5,3 +5,4 @@ image: "https://media.licdn.com/dms/image/v2/C4E03AQGqUZfsJ7Oy4Q/profile-display
 jobtitle: "Granter Writer"
 weight: 4
 ---
+Leads grant writing efforts for ILF. In addition, handles objectives and tasks outlined by grading committee coordinators.

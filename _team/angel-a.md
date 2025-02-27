@@ -7,5 +7,3 @@ linkedinurl: "https://www.linkedin.com/example2"
 promoted: true
 weight: 2
 ---
-
-Very epic person.
