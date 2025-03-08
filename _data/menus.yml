@@ -17,6 +17,9 @@ main:
   - name: "Contact"
     url: "/contact/"
     weight: 5
+  - name: "FAQ⁉️"
+    url: "/services/faq/"
+    weight: 6
 
 footer:
   - name: "Home"
