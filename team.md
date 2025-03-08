@@ -8,5 +8,4 @@ intro_image_hide_on_mobile: false
 ---
 
 # Meet The Team
-
-Meet our epic team. 
+Meet the Iron Legacy Foundation Team! 
