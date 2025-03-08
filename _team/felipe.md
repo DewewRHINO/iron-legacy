@@ -1,9 +1,7 @@
 ---
 title: "Felipe"
-date: 2018-12-20T13:44:30+10:00
-image: "https://media.discordapp.net/attachments/879825011161067521/1344490427117473853/felipe_a.png?ex=67c119c9&is=67bfc849&hm=3b301f2e3cfc059d80af91a9a1ff7fd09a015f9dd6dd9bd745ae737aa65ce706&=&format=webp&quality=lossless&width=300&height=300"
+image: "https://media.licdn.com/dms/image/v2/D5603AQHucWMSTlTzxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668706927613?e=1746662400&v=beta&t=PYFh3RVI_l1e5NCo6p5JQjdjpXI98GHbVM0hpgqzwfE"
 jobtitle: "School Outreach and Community Ambassador/Grading Committee Member"
-linkedinurl: ""
 weight: 3
 ---
 
