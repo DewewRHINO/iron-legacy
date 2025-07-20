@@ -1,5 +1,5 @@
-baseurl: '/'
-permalink: pretty
+baseurl: /iron-legacy
+permalink: /
 title: 'Iron Legacy'
 
 logo:
