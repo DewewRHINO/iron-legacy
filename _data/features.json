@@ -7,7 +7,7 @@
       "width": 160,
       "height": 160
     },
-    "link": "/services/donate/"
+    "link": "services/donate/"
   },
   {
     "title": "Apply",
@@ -17,7 +17,7 @@
       "width": 160,
       "height": 160
     },
-    "link": "/services/apply/"
+    "link": "services/apply/"
   },
   {
     "title": "Collaborate",
