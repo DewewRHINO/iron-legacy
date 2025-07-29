@@ -17,9 +17,12 @@ main:
   - name: "Contact"
     url: "contact/"
     weight: 5
-  - name: "FAQ⁉️"
+  - name: "FAQ"
     url: "services/faq/"
     weight: 6
+  - name: "GuideStar"
+    url: "https://www.guidestar.org/profile/99-3675851"
+    weight: 7
 
 footer:
   - name: "Home"
