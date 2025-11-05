@@ -3,13 +3,13 @@
 
 // Colors
 
-$primary: #0e5e1e;
-$primary-dark: #0e5e1e;
-$secondary: #ad9391;
-$black: #2f2f41;
-$white: #ffffff;
-$white-offset: #fff6f8;
-$steel: #5c5a5a;
+$primary: #1f3b6f;
+$primary-dark: #1f3b6f;
+$secondary: #ffd166;
+$black: #000000;
+$white: #f9f9fa;
+$white-offset: #f9f9fa;
+$steel: #000000; //text
 
 // Links
 $link-color: $primary;
@@ -18,8 +18,8 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: "Merriweather";
+$font-family-heading: "Merriweather";
 
 // Footer
 $footer-background-color: $primary;
