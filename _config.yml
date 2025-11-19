@@ -1,7 +1,7 @@
 url: https://ironlegacyfoundation.org
 baseurl: /
 permalink: /
-title: 'Iron Legacy'
+title: "Iron Legacy Foundation"
 
 logo:
   mobile: "images/logo/mobile-logo.png"
@@ -11,7 +11,7 @@ logo:
   desktop_height: "64px"
   desktop_width: "240px"
 
-home: 
+home:
   limit_services: 6
 
 collections:
