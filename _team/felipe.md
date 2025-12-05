@@ -1,7 +1,7 @@
 ---
-title: "Felipe"
+title: "Felipe Aceves"
 image: "images/team/felipe.png"
-jobtitle: "School Outreach and Community Ambassador/Grading Committee Member"
+jobtitle: "General Member"
 weight: 3
 promoted: false
 ---

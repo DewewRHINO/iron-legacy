@@ -4,8 +4,8 @@
     "description": "Donate to Iron Legacy!",
     "image": {
       "url": "images/Donate.png",
-      "width": 160,
-      "height": 160
+      "width": 240,
+      "height": 240
     },
     "link": "services/donate/"
   },
@@ -14,8 +14,8 @@
     "description": "Get more information on who is eligble and application link.",
     "image": {
       "url": "images/Apply.png",
-      "width": 160,
-      "height": 160
+      "width": 240,
+      "height": 240
     },
     "link": "services/apply/"
   },
@@ -24,8 +24,8 @@
     "description": "Join our board!",
     "image": {
       "url": "images/Join.png",
-      "width": 160,
-      "height": 160
+      "width": 240,
+      "height": 240
     },
     "link": "services/genmember/"
   }

@@ -1,8 +1,8 @@
 ---
-title: "Derek"
+title: "Derek Garcia"
 date: 2018-11-19T10:47:58+10:00
 image: "images/team/derek.png"
-jobtitle: "External Outreach Coordinator"
+jobtitle: "General Member"
 linkedinurl: ""
 weight: 7
 promoted: false

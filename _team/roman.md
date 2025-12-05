@@ -1,7 +1,7 @@
 ---
-title: "Roman"
+title: "Roman Sanchez Jr"
 image: "images/team/roman.png"
-jobtitle: "Internal and Grading Committee Coordinator"
+jobtitle: "General Member"
 weight: 2
 promoted: false
 ---
