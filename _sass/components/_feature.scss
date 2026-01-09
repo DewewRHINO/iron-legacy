@@ -84,6 +84,11 @@
   color: #fff;
 }
 @media (max-width: 767px) {
-  .donation-card { min-height: auto; }
-  .donation-card .feature-image { width: 100px; height: 100px; }
+  .donation-card {
+    min-height: auto;
+  }
+  .donation-card .feature-image {
+    width: 100px;
+    height: 100px;
+  }
 }
