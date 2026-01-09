@@ -1,12 +1,17 @@
 <div class='header sticky-md-top'>
   <div class="container">
+    {% assign home_link = '/' %}
+    {% if page.url and page.url contains '/es/' %}
+      {% assign home_link = '/es/' %}
+    {% endif %}
     <div class="logo">
-      <a href="{{ '/' | relative_url }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
+      <a href="{{ home_link | relative_url }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ '/' | relative_url }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
+      <a href="{{ home_link | relative_url }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
     </div>
     {% include main-menu.html %}
     {% include hamburger.html %}
+    {% include language-switcher.html %}
   </div>
 </div>

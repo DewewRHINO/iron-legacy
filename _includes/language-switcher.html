@@ -1,0 +1,73 @@
+{%- comment -%} Language toggle: single button that switches between English and Español {%- endcomment -%}
+{% assign current_lang = site.language_default %}
+{% if page.url %}
+  {% for l in site.languages %}
+    {% assign fragment = '/' | append: l.code | append: '/' %}
+    {% if page.url contains fragment %}
+      {% assign current_lang = l.code %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign other_lang = site.languages | where_exp: "l", "l.code != current_lang" | first %}
+{% if other_lang == nil %}
+  {% assign other_lang = site.languages | first %}
+{% endif %}
+
+{% assign target_url = '' %}
+{% if page.translation_reference %}
+  {% assign translation = nil %}
+  {% if other_lang.code == site.language_default %}
+    {%- comment -%} Search pages first for a page with same translation_reference that is NOT under /es/ {%- endcomment -%}
+    {% for p in site.pages %}
+      {% if p.translation_reference == page.translation_reference %}
+        {% unless p.url contains '/es/' %}
+          {% assign translation = p %}
+          {% break %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if translation == nil %}
+      {% for d in site.documents %}
+        {% if d.translation_reference == page.translation_reference and d.published != false %}
+          {% unless d.url contains '/es/' %}
+            {% assign translation = d %}
+            {% break %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    {% assign match_fragment = '/' | append: other_lang.code | append: '/' %}
+    {% for p in site.pages %}
+      {% if p.translation_reference == page.translation_reference and p.url contains match_fragment %}
+        {% assign translation = p %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if translation == nil %}
+      {% for d in site.documents %}
+        {% if d.translation_reference == page.translation_reference and d.url contains match_fragment and d.published != false %}
+          {% assign translation = d %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+  {% if translation and translation.url %}
+    {% assign target_url = translation.url %}
+  {% endif %}
+{% endif %}
+
+{% if target_url == '' %}
+  {% if other_lang.code == site.language_default %}
+    {% assign target_url = '/' %}
+  {% else %}
+    {% assign target_url = other_lang.path %}
+  {% endif %}
+{% endif %}
+
+<div class="language-toggle">
+  {% assign other_label = site.data.translations | where: "code", other_lang.code | first %}
+  <a id="language-toggle-button" class="btn btn-sm" href="{{ target_url | relative_url }}" data-target-lang="{{ other_lang.code }}" aria-label="Switch to {{ other_label.name | default: other_lang.name | default: other_lang.code }}">{{ other_label.name | default: other_lang.name | default: other_lang.code }}</a>
+</div>

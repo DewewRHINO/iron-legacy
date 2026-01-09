@@ -3,23 +3,40 @@ baseurl: /
 permalink: /
 title: "Iron Legacy Foundation"
 
+# Localization
+language_default: en
+languages:
+  - code: en
+    path: /
+    name: English
+  - code: es
+    path: /es/
+    name: Español
+
 logo:
   mobile: "images/logo/mobile-logo.png"
   mobile_height: "32px"
   mobile_width: "32px"
   desktop: "images/logo/long-logo.png"
-  desktop_height: "64px"
-  desktop_width: "240px"
+  desktop_height: "48px"
+  desktop_width: "200px"
 
 home:
   limit_services: 6
 
+collections_dir: content
 collections:
   services:
     output: true
     sort_by: weight
   team:
     output: true
+  es:
+    output: true
+    permalink: /:collection/:slug
+  en:
+    output: true
+    permalink: /:collection/:slug
 
 defaults:
   - scope:
@@ -29,6 +46,28 @@ defaults:
       layout: "service"
   - scope:
       path: ""
+      type: "team"
+    values:
+      layout: "team"
+  - scope:
+      path: "es/"
+      type: "services"
+    values:
+      layout: "service"
+      permalink: /es/services/:slug
+  - scope:
+      path: "es/"
+      type: "team"
+    values:
+      layout: "team"
+  - scope:
+      path: "_es/services"
+      type: "services"
+    values:
+      layout: "service"
+      permalink: /es/services/:slug
+  - scope:
+      path: "es/"
       type: "team"
     values:
       layout: "team"

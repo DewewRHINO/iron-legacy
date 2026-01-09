@@ -5,6 +5,5 @@ image: "images/team/laura.png"
 jobtitle: "General Member"
 weight: 4
 promoted: false
+translation_reference: team-laura
 ---
-
-Leads grant writing efforts for ILF. In addition, handles objectives and tasks outlined by grading committee coordinators.

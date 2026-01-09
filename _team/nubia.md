@@ -2,6 +2,7 @@
 title: "Nubia Velazquez"
 image: "images/team/nubia.png"
 jobtitle: "Secretary"
-promoted: true
+promoted: false
 weight: 1
+translation_reference: team-nubia
 ---

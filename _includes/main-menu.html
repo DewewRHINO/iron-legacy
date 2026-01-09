@@ -1,9 +1,39 @@
 <div id="main-menu" class="main-menu">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  {% assign current_lang = site.language_default %}
+  {% if page.url %}
+    {% for l in site.languages %}
+      {% assign fragment = '/' | append: l.code | append: '/' %}
+      {% if page.url contains fragment %}
+        {% assign current_lang = l.code %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if current_lang == site.language_default %}
+    {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
+  {% else %}
+    {% assign mainmenu = site.data.menuses.main | sort: 'weight' %}
+  {% endif %}
   <ul>
     {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+    {% assign link = item.url %}
+
+    {% if link contains '://' %}
+      {% comment %} external link: do nothing {% endcomment %}
+    {% else %}
+      {% if link | slice: 0,1 != '/' %}
+        {% assign link = '/' | append: link %}
+      {% endif %}
+      {% if current_lang != site.language_default %}
+        {% assign match_fragment = '/' | append: current_lang | append: '/' %}
+        {% unless link contains match_fragment %}
+          {% assign link = '/' | append: current_lang | append: link %}
+        {% endunless %}
+      {% endif %}
+    {% endif %}
+
+    <li class="{% if link == page.url or link == page.url | relative_url %}active{% endif %}">
+      <a href="{{ link | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>

@@ -3,7 +3,9 @@ title: About Iron Legacy
 layout: page
 description: About
 bodyClass: page-about
+translation_reference: about
 ---
+
 # Vision
 
 A world in which access to higher education is a given and not a privilege.

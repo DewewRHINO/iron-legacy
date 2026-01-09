@@ -1,5 +1,6 @@
 ---
 title: Team
+translation_reference: team
 layout: teams
 description: Team
 permalink: "/team/"
@@ -8,4 +9,5 @@ intro_image_hide_on_mobile: false
 ---
 
 # Meet The Team
-Meet the Iron Legacy Foundation Team! 
+
+Meet the Iron Legacy Foundation Team!

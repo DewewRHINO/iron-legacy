@@ -1,9 +1,3 @@
----
-title: "How can I apply for the Scholarship?"
-date: 2018-12-28T15:14:39+10:00
-weight: 4
----
-
 # Frequently Asked Questions
 
 Frequently asked questions about the Iron Legacy 😲

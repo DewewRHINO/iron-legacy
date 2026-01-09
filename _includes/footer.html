@@ -5,10 +5,31 @@
         <div class="footer-inner">
           <h2 class="footer-title">{{site.title}}</h2>
           <ul>
-            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
+            {% assign current_lang = site.language_default %}
+            {% if page.url %}
+              {% for l in site.languages %}
+                {% assign fragment = '/' | append: l.code | append: '/' %}
+                {% if page.url contains fragment %}
+                  {% assign current_lang = l.code %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if current_lang == site.language_default %}
+              {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
+            {% else %}
+              {% assign footermenu = site.data.menuses.footer | sort: 'weight'  %}
+            {% endif %}
             {% for item in footermenu %}
-            <li class="{% if item.url == page.url %}active{% endif %}">
-              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+              {% assign link = item.url %}
+              {% if current_lang != site.language_default and link != '' and link contains '://' == false %}
+                {% assign match_fragment = '/' | append: current_lang | append: '/' %}
+                {% unless link contains match_fragment %}
+                  {% assign link = '/' | append: current_lang | append: '/' | append: link %}
+                {% endunless %}
+              {% endif %}
+            <li class="{% if link == page.url or link == page.url | relative_url %}active{% endif %}">
+              <a href="{{ link | relative_url }}">{{ item.name }}</a>
             </li>
             {% endfor %}
           </ul>

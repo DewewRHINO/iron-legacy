@@ -9,23 +9,41 @@ bodyClass: "page-service"
       <div class="service service-single">
         <h1 class="title">{{page.title}}</h1>
         <div class="content">{{content}}</div>
-        {% if site.data.donations and page.title == "How can I help Iron Legacy?" %}
+        {% if page.translation_reference == "services-donate" %}
+        {% assign current_lang = site.language_default %}
+        {% if page.url %}
+          {% for l in site.languages %}
+            {% assign fragment = '/' | append: l.code | append: '/' %}
+            {% if page.url contains fragment %}
+              {% assign current_lang = l.code %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if current_lang == site.language_default %}
+          {% assign donations = site.data.donations %}
+        {% else %}
+          {% assign donations = site.data.donationses %}
+        {% endif %}
         <div class="strip">
           <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
             <div class="row justify-content-center">
         
-              {% for feature in site.data.donations %}
-              <div class="col-12 col-md-6 col-lg-4 mb-2">
-                <div class="feature">
+              {% for feature in donations %}
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="feature donation-card h-100 d-flex flex-column align-items-center text-center p-4">
                   {% if feature.image %}
-                  <div class="feature-image">
-                    <a  href="{{ feature.link }}">
+                  <div class="feature-image mb-3">
+                    <a href="{{ feature.link }}" target="_blank" rel="noopener noreferrer">
                       <img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}"/>
                     </a>
                   </div>
                   {% endif %}
-                  <!-- <h2 class="feature-title">{{ feature.description }}</h2> -->
-                  <div class="feature-content">{{ feature.description }}</div>
+                  <h3 class="feature-title h5 fw-bold mb-2">{{ feature.title }}</h3>
+                  <div class="feature-content mb-3">{{ feature.description }}</div>
+                  <div class="feature-cta mt-auto">
+                    <a class="btn btn-donate" href="{{ feature.link }}" target="_blank" rel="noopener noreferrer">{{ feature.cta | default: "Donate" }}</a>
+                  </div>
                 </div>
               </div>
               {% endfor %}
@@ -33,7 +51,7 @@ bodyClass: "page-service"
             </div>
           </div>
         </div>
-        {% endif %}
+        {% endif %} 
       </div>
     </div>
   </div>
