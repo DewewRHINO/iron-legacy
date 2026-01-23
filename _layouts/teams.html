@@ -65,23 +65,20 @@ bodyClass: "page-teams"
         {% assign teams = site.team | where: "promoted", false | sort: "weight" %}
         {% for team in teams %}
           {% if page.url and page.url contains '/es/' %}
-            {% if team.url contains '/es/' %}
               <div class="col-12 col-md-4 mb-3">
                   <div class="team team-summary">
                       {% assign render = team %}
                       {% assign turl = team.url %}
-                      {% if page.url and page.url contains '/es/' %}
-                        {% assign trans = nil %}
-                        {% for d in site.documents %}
-                          {% if d.translation_reference == team.translation_reference and d.url contains '/es/' and d.published != false %}
-                            {% assign trans = d %}
-                            {% break %}
-                          {% endif %}
-                        {% endfor %}
-                        {% if trans %}
-                          {% assign render = trans %}
-                          {% assign turl = trans.url %}
+                      {% assign trans = nil %}
+                      {% for d in site.documents %}
+                        {% if d.translation_reference == team.translation_reference and d.url contains '/es/' and d.published != false %}
+                          {% assign trans = d %}
+                          {% break %}
                         {% endif %}
+                      {% endfor %}
+                      {% if trans %}
+                        {% assign render = trans %}
+                        {% assign turl = trans.url %}
                       {% endif %}
                       {% if render.image %}
                       <div class="team-image">
@@ -94,7 +91,6 @@ bodyClass: "page-teams"
                       </div>
                   </div>
               </div>
-            {% endif %}
           {% else %}
             {% unless team.url contains '/es/' %}
               <div class="col-12 col-md-4 mb-3">

@@ -1,35 +1,24 @@
 [
   {
     "title": "Scholarship Donation",
-    "description": "100% of donations from our Give Butter platform go directly to the scholarship pool for that year. Scholarships have a limit of $500 per student. Any excess is added to form the next scholarship.",
+    "description": "",
     "image": {
       "url": "images/Scholarship-Donation.png",
-      "width": 240,
-      "height": 240
+      "width": 480,
+      "height": 480
     },
     "link": "https://givebutter.com/zyqKvb",
     "cta": "DONATE TO SCHOLARSHIP"
   },
   {
     "title": "General Donation",
-    "description": "Supports ILF operations including events, logistics, and recognition for recipients.",
+    "description": "",
     "image": {
       "url": "images/General-Donation.png",
-      "width": 240,
-      "height": 240
+      "width": 480,
+      "height": 480
     },
     "link": "https://www.paypal.com/US/fundraiser/charity/5300353",
     "cta": "DONATE TO ILF"
-  },
-  {
-    "title": "Cash & Gifts",
-    "description": "We accept checks, cash, and in-kind gifts.",
-    "image": {
-      "url": "images/Cash&Gifts-Donation.png",
-      "width": 240,
-      "height": 240
-    },
-    "link": "https://docs.google.com/forms/d/1b7Wibqzjw4DD3yTmJc926XAYcJ3s9gPvT2hGsMnan2w/viewform?edit_requested=true",
-    "cta": "DONATE CASH/GIFTS"
   }
 ]

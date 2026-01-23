@@ -1,18 +1,15 @@
 main:
-  - name: "Apply"
-    url: "services/apply/"
-    weight: 2
-  - name: "Collaborate"
-    url:  "services/genmember/"
-    weight: 2
-  - name: "Donate"
-    url: "services/donate/"
-    weight: 2
-  - name: "Team"
-    url: "team/"
-    weight: 3
   - name: "About"
     url: "about/"
+    weight: 1
+  - name: "Team"
+    url: "team/"
+    weight: 2
+  - name: "Collaborate"
+    url: "services/genmember/"
+    weight: 3
+  - name: "Donate"
+    url: "services/donate/"
     weight: 4
   - name: "Contact"
     url: "contact/"
@@ -23,6 +20,9 @@ main:
   - name: "GuideStar"
     url: "https://www.guidestar.org/profile/99-3675851"
     weight: 7
+  - name: "Apply"
+    url: "services/apply/"
+    weight: 8
 
 footer:
   - name: "Home"

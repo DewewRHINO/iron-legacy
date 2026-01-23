@@ -1,6 +1,6 @@
 ---
 title: "Jessica Leung"
-image: "images/team/simpleuser.png"
+image: "images/team/jessica.jpg"
 jobtitle: "General Member"
 weight: 6
 translation_reference: team-jessica

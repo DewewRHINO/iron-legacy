@@ -1,7 +1,7 @@
 [
   {
     "title": "Donación para becas",
-    "description": "El 100% de las donaciones en nuestra plataforma GiveButter va directamente al fondo de becas del año. Las becas tienen un límite de $500 por estudiante. Los excedentes se añaden al próximo fondo.",
+    "description": "",
     "image": {
       "url": "images/Scholarship-Donation.png",
       "width": 240,
@@ -12,7 +12,7 @@
   },
   {
     "title": "Donación general",
-    "description": "Apoya las operaciones de ILF, incluyendo eventos, logística y reconocimiento para los beneficiarios.",
+    "description": "",
     "image": {
       "url": "images/General-Donation.png",
       "width": 240,
@@ -20,16 +20,5 @@
     },
     "link": "https://www.paypal.com/US/fundraiser/charity/5300353",
     "cta": "DONAR A ILF"
-  },
-  {
-    "title": "Efectivo y regalos",
-    "description": "Aceptamos cheques, efectivo y donaciones en especie.",
-    "image": {
-      "url": "images/Cash&Gifts-Donation.png",
-      "width": 240,
-      "height": 240
-    },
-    "link": "https://docs.google.com/forms/d/1b7Wibqzjw4DD3yTmJc926XAYcJ3s9gPvT2hGsMnan2w/viewform?edit_requested=true",
-    "cta": "DONAR EFECTIVO/REGALOS"
   }
 ]

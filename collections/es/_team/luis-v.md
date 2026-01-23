@@ -1,5 +1,5 @@
 ---
-title: "Luis Velazquez"
+title: "Luis Velasquez"
 image: "images/team/luis.png"
 jobtitle: "President"
 weight: 9

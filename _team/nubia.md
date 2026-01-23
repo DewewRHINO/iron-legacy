@@ -1,5 +1,5 @@
 ---
-title: "Nubia Velazquez"
+title: "Nubia Velasquez"
 image: "images/team/nubia.png"
 jobtitle: "Secretary"
 promoted: false

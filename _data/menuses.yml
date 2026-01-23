@@ -1,28 +1,28 @@
 main:
-  - name: "Aplicar"
-    url: "services/apply/"
-    weight: 2
-  - name: "Colaborar"
-    url: "services/genmember/"
-    weight: 2
-  - name: "Donar"
-    url: "services/donate/"
-    weight: 2
+  - name: "Sobre"
+    url: "about/"
+    weight: 1
   - name: "Equipo"
     url: "team/"
+    weight: 2
+  - name: "Colabora"
+    url: "services/genmember/"
     weight: 3
-  - name: "Sobre Nosotros"
-    url: "about/"
+  - name: "Donar"
+    url: "services/donate/"
     weight: 4
   - name: "Contacto"
     url: "contact/"
     weight: 5
-  - name: "Preguntas Frecuentes"
+  - name: "FAQ"
     url: "services/faq/"
     weight: 6
   - name: "GuideStar"
     url: "https://www.guidestar.org/profile/99-3675851"
     weight: 7
+  - name: "Aplica"
+    url: "services/apply/"
+    weight: 8
 
 footer:
   - name: "Inicio"

@@ -1,6 +1,6 @@
 ---
 title: "Jasmine Weddle"
-image: "images/team/simpleuser.png"
+image: "images/team/jasmine.jpg"
 jobtitle: "General Member"
 weight: 5
 translation_reference: team-jasmine
