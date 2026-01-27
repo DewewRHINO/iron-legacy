@@ -1,0 +1,28 @@
+{% assign countdown_lang = include.page_language | default: page.language | default: page.lang | default: "en" %}
+{% if countdown_lang == "es" %}
+  {% assign countdown_title = "Solicitudes abren el 16 de febrero de 2026" %}
+  {% assign label_days = "Días" %}
+  {% assign label_hours = "Horas" %}
+  {% assign label_minutes = "Minutos" %}
+  {% assign label_seconds = "Segundos" %}
+{% else %}
+  {% assign countdown_title = "Applications Open February 16, 2026" %}
+  {% assign label_days = "Days" %}
+  {% assign label_hours = "Hours" %}
+  {% assign label_minutes = "Minutes" %}
+  {% assign label_seconds = "Seconds" %}
+{% endif %}
+
+<link rel="stylesheet" href="/assets/css/countdown.css">
+
+<div class="countdown-outer">
+  <div class="countdown-title">{{ countdown_title }}</div>
+  <div id="countdown-clock" class="countdown-clock" aria-label="Countdown">
+    <div class="countdown-segment"><span id="countdown-days">0</span><span class="label">{{ label_days }}</span></div>
+    <div class="countdown-segment"><span id="countdown-hours">0</span><span class="label">{{ label_hours }}</span></div>
+    <div class="countdown-segment"><span id="countdown-minutes">0</span><span class="label">{{ label_minutes }}</span></div>
+    <div class="countdown-segment"><span id="countdown-seconds">0</span><span class="label">{{ label_seconds }}</span></div>
+  </div>
+</div>
+
+<script src="/assets/js/countdown.js"></script>

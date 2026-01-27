@@ -1,0 +1,110 @@
+/* Countdown (home hero) */
+.countdown-outer {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 1.4rem 0 1rem 0;
+}
+
+.countdown-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: rgba(26, 58, 94, 0.9);
+}
+
+.countdown-clock {
+  width: 100%;
+  max-width: 34rem;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0.75rem 0.85rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+  border: 1px solid rgba(26, 58, 94, 0.14);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.countdown-segment {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem 0.75rem;
+}
+
+.countdown-segment + .countdown-segment {
+  border-left: 1px solid rgba(26, 58, 94, 0.12);
+}
+
+.countdown-segment span:not(.label) {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.95rem;
+  line-height: 1;
+  color: #1a3a5e;
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-segment span.label {
+  margin-top: 0.35rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(26, 58, 94, 0.7);
+}
+
+@media (min-width: 1260px) {
+  .countdown-clock {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Keep the countdown as a single pill (one tile) on tablets */
+  .countdown-clock {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .countdown-outer {
+    align-items: center;
+  }
+
+  .countdown-title {
+    text-align: center;
+  }
+
+  .countdown-clock {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    padding: 0.65rem;
+  }
+
+  .countdown-segment {
+    border: 1px solid rgba(26, 58, 94, 0.12);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    padding: 0.6rem 0.25rem;
+  }
+
+  .countdown-segment + .countdown-segment {
+    border-left: none;
+  }
+
+  .countdown-segment span:not(.label) {
+    font-size: 1.55rem;
+  }
+}
