@@ -27,7 +27,7 @@ Frequently asked questions about the Iron Legacy 😲
 
 ### Q: Is it Race/Ethnicity Focused?
 
-**A:** **HELL NAH!** Any high school senior can apply, regardless of race or ethnicity. We believe in equal opportunity for all.
+**A:** **No.** Any high school senior can apply, regardless of race or ethnicity. We believe in equal opportunity for all.
 
 ### **Note:**
 
