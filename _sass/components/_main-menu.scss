@@ -18,7 +18,9 @@
         text-decoration: none;
         color: $primary;
         border-radius: 6px;
-        transition: background-color 180ms ease, color 180ms ease,
+        transition:
+          background-color 180ms ease,
+          color 180ms ease,
           transform 120ms ease;
         &:hover,
         &:focus {
@@ -39,6 +41,32 @@
           box-shadow: 0 2px 6px rgba(31, 59, 111, 0.08);
           &:hover {
             transform: none;
+          }
+        }
+      }
+
+      &.menu-cta {
+        > a {
+          background-color: $secondary; // #FFD166
+          color: $primary;
+          font-weight: 800;
+          border: 1px solid rgba($primary, 0.12);
+          padding: 9px 14px;
+          box-shadow: 0 10px 20px rgba(255, 209, 102, 0.28);
+        }
+        > a:hover,
+        > a:focus {
+          background-color: darken($secondary, 6%);
+          color: $primary;
+        }
+        > a:focus-visible {
+          box-shadow: 0 0 0 0.25rem rgba(255, 209, 102, 0.55);
+        }
+        &.active {
+          > a {
+            background-color: $secondary;
+            color: $primary;
+            box-shadow: 0 12px 24px rgba(255, 209, 102, 0.32);
           }
         }
       }

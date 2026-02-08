@@ -32,7 +32,7 @@
         {% endunless %}
       {% endif %}
     {% endif %}
-    <li class="{% if link == page.url or link == page.url | relative_url %}active{% endif %}">
+    <li class="{% if link == page.url or link == page.url | relative_url %}active{% endif %}{% if item.url contains 'services/apply/' %} menu-cta{% endif %}">
       <a style="text-decoration: none;" href="{{ link | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
