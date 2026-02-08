@@ -7,51 +7,104 @@ bodyClass: "page-service"
   <div class="row justify-content-start">
     <div class="col-12">
       <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
         {% if page.translation_reference == "services-donate" %}
-        {% assign current_lang = site.language_default %}
-        {% if page.url %}
-          {% for l in site.languages %}
-            {% assign fragment = '/' | append: l.code | append: '/' %}
-            {% if page.url contains fragment %}
-              {% assign current_lang = l.code %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if current_lang == site.language_default %}
-          {% assign donations = site.data.donations %}
-        {% else %}
-          {% assign donations = site.data.donationses %}
-        {% endif %}
-        <div class="strip">
-          <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-            <div class="row justify-content-center">
-        
-              {% for feature in donations %}
-              <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="feature donation-card h-100 d-flex flex-column align-items-center text-center p-4">
-                  {% if feature.image %}
-                  <div class="feature-image mb-3">
-                    <a href="{{ feature.link }}" target="_blank" rel="noopener noreferrer">
-                      <img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}"/>
-                    </a>
+          {% assign current_lang = site.language_default %}
+          {% if page.url %}
+            {% for l in site.languages %}
+              {% assign fragment = '/' | append: l.code | append: '/' %}
+              {% if page.url contains fragment %}
+                {% assign current_lang = l.code %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if current_lang == site.language_default %}
+            {% assign donations = site.data.donations %}
+            {% assign donate_pill_default = "Directly Supports a Student" %}
+            {% assign donate_benefits_title_default = "After donating, you will receive:" %}
+          {% else %}
+            {% assign donations = site.data.donationses %}
+            {% assign donate_pill_default = "Apoya directamente a un estudiante" %}
+            {% assign donate_benefits_title_default = "Después de donar, recibirás:" %}
+          {% endif %}
+
+          <div class="donate-page">
+            <div class="donate-hero text-center">
+              <h1 class="donate-title">{{ page.donate_title | default: page.title }}</h1>
+              {% if page.donate_subtitle %}
+                <p class="donate-subtitle">{{ page.donate_subtitle }}</p>
+              {% endif %}
+              {% if page.donate_note %}
+                <p class="donate-note">{{ page.donate_note }}</p>
+              {% endif %}
+            </div>
+
+            <div class="donate-choice">
+              <div class="donate-choice-label">
+                <span class="donate-choice-pill">
+                  <span class="donate-choice-star" aria-hidden="true">★</span>
+                  {{ page.donate_pill | default: donate_pill_default }}
+                </span>
+              </div>
+
+              <div class="donate-panel">
+                <div class="row g-0 donate-panel-row">
+                  {% for donation in donations %}
+                    <div class="col-12 col-md-6 donate-panel-col">
+                      <div class="donate-card h-100">
+                        {% if donation.image %}
+                          <div class="donate-card-icon" aria-hidden="true">
+                            <a href="{{ donation.link }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                              <img alt="" src="{{ donation.image.url | relative_url }}" width="{{ donation.image.width }}" height="{{ donation.image.height }}" loading="lazy" />
+                            </a>
+                          </div>
+                        {% endif %}
+                        <h2 class="donate-card-title">{{ donation.title }}</h2>
+                        {% if donation.description %}
+                          <p class="donate-card-description">{{ donation.description }}</p>
+                        {% endif %}
+                        {% if donation.supporting %}
+                          <p class="donate-card-supporting">{{ donation.supporting }}</p>
+                        {% endif %}
+                        <div class="donate-card-cta mt-auto">
+                          <a class="btn btn-donate" href="{{ donation.link }}" target="_blank" rel="noopener noreferrer">{{ donation.cta | default: "Donate" }}</a>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="donate-benefits" role="note">
+                <div class="donate-benefits-inner">
+                  <div class="donate-benefits-icon" aria-hidden="true">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="4" y="6" width="30" height="34" rx="4" fill="#F6EFE6" stroke="#E6D7C6"/>
+                      <rect x="10" y="14" width="18" height="2.5" rx="1.25" fill="#C9B08E"/>
+                      <rect x="10" y="20" width="18" height="2.5" rx="1.25" fill="#C9B08E"/>
+                      <rect x="10" y="26" width="12" height="2.5" rx="1.25" fill="#C9B08E"/>
+                      <circle cx="31" cy="31" r="9" fill="#F6EFE6" stroke="#E6D7C6"/>
+                      <path d="M27.2 31.2L29.9 33.9L35 28.8" stroke="#C9A13A" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
-                  {% endif %}
-                  <h3 class="feature-title h5 fw-bold mb-2">{{ feature.title }}</h3>
-                  <div class="feature-content mb-3">{{ feature.description }}</div>
-                  <div class="feature-cta mt-auto">
-                    <a class="btn btn-donate" href="{{ feature.link }}" target="_blank" rel="noopener noreferrer">{{ feature.cta | default: "Donate" }}</a>
+                  <div class="donate-benefits-content">
+                    <div class="donate-benefits-title">{{ page.donate_benefits_title | default: donate_benefits_title_default }}</div>
+                    {% if page.donate_benefits and page.donate_benefits.size > 0 %}
+                      <ul class="donate-benefits-list">
+                        {% for item in page.donate_benefits %}
+                          <li>{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                   </div>
                 </div>
               </div>
-              {% endfor %}
-        
             </div>
           </div>
-        </div>
-        {% endif %} 
+        {% else %}
+          <h1 class="title">{{page.title}}</h1>
+          <div class="content">{{content}}</div>
+        {% endif %}
       </div>
     </div>
   </div>

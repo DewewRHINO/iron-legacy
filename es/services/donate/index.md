@@ -1,12 +1,15 @@
 ---
-title: "Cómo puedo ayudar a Iron Legacy?"
+title: "Ayuda a un estudiante de La Puente a llegar a la universidad"
 layout: service
 translation_reference: services-donate
 permalink: /es/services/donate/
+donate_title: "Ayuda a un estudiante de La Puente a llegar a la universidad"
+donate_subtitle: "Cada año trabajamos para brindar becas a estudiantes de preparatoria de la comunidad de La Puente para apoyar su educación superior."
+donate_note: "Iron Legacy Foundation es una organización sin fines de lucro 501(c)(3) registrada. Las donaciones son deducibles de impuestos."
+donate_pill: "Apoya directamente a un estudiante"
+donate_benefits_title: "Después de donar, recibirás:"
+donate_benefits:
+  - "recibo deducible de impuestos"
+  - "correo de confirmación"
+  - "actualizaciones sobre becas"
 ---
-
-Iron Legacy cree que la lucha y la adversidad son los materiales que forjan el carácter.
-
-Sus donaciones apoyan las becas y los costos organizativos de la fundación. Cada año trabajamos para proporcionar becas a estudiantes de La Puente y áreas cercanas. Todas las donaciones van directamente al fondo de becas y se agradece enormemente el apoyo de la comunidad.
-
-Para donar, visite [aquí](https://givebutter.com/zyqKvb).

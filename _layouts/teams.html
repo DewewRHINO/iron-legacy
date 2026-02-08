@@ -39,17 +39,17 @@ bodyClass: "page-teams"
             {% endif %}
           {% endfor %}
           {% if doc %}
-          <div class="col-12 col-md-6 mb-2">
-              <div class="team team-summary team-summary-large">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="team team-card h-100">
                   {% assign render = doc %}
                   {% assign turl = doc.url %}
                   {% if render.image %}
                   <div class="team-image">
-                      <img width="90" height="90" alt="{{ render.title }}" class="img-fluid mb-2" src="{{ render.image | relative_url }}" />
+                  <img width="140" height="140" alt="{{ render.title }}" class="img-fluid" src="{{ render.image | relative_url }}" loading="lazy" />
                   </div>
                   {% endif %}
                   <div class="team-meta">
-                      <h2 class="team-name"><a href="{{ turl | relative_url }}">{{ render.title }}</a></h2>
+                  <h2 class="team-name"><a href="{{ turl | relative_url }}">{{ render.title }}</a></h2>
                       <p class="team-description">{{ render.jobtitle }}</p>
                       {% if render.linkedinurl %}
                       <a target="_blank" href="{{ render.linkedinurl }}" rel="noreferrer">LinkedIn</a>
@@ -65,8 +65,8 @@ bodyClass: "page-teams"
         {% assign teams = site.team | where: "promoted", false | sort: "weight" %}
         {% for team in teams %}
           {% if page.url and page.url contains '/es/' %}
-              <div class="col-12 col-md-4 mb-3">
-                  <div class="team team-summary">
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="team team-card h-100">
                       {% assign render = team %}
                       {% assign turl = team.url %}
                       {% assign trans = nil %}
@@ -82,7 +82,7 @@ bodyClass: "page-teams"
                       {% endif %}
                       {% if render.image %}
                       <div class="team-image">
-                          <img width="60" height="60" alt="{{ render.title }}" class="img-fluid mb-2" src="{{ render.image | relative_url }}" />
+                          <img width="120" height="120" alt="{{ render.title }}" class="img-fluid" src="{{ render.image | relative_url }}" loading="lazy" />
                       </div>
                       {% endif %}
                       <div class="team-meta">
@@ -93,8 +93,8 @@ bodyClass: "page-teams"
               </div>
           {% else %}
             {% unless team.url contains '/es/' %}
-              <div class="col-12 col-md-4 mb-3">
-                  <div class="team team-summary">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="team team-card h-100">
                       {% assign render = team %}
                       {% assign turl = team.url %}
                       {% if page.url and page.url contains '/es/' %}
@@ -112,7 +112,7 @@ bodyClass: "page-teams"
                       {% endif %}
                       {% if render.image %}
                       <div class="team-image">
-                          <img width="60" height="60" alt="{{ render.title }}" class="img-fluid mb-2" src="{{ render.image | relative_url }}" />
+                          <img width="120" height="120" alt="{{ render.title }}" class="img-fluid" src="{{ render.image | relative_url }}" loading="lazy" />
                       </div>
                       {% endif %}
                       <div class="team-meta">

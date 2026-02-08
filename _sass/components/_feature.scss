@@ -76,12 +76,26 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.875rem;
+  letter-spacing: 0.02em;
   display: inline-block;
   border: none;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(21, 61, 130, 0.22);
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .btn-donate:hover {
   background-color: #0f336b;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(21, 61, 130, 0.26);
+}
+.btn-donate:focus-visible {
+  outline: 3px solid rgba(255, 209, 102, 0.65);
+  outline-offset: 3px;
 }
 @media (max-width: 767px) {
   .donation-card {

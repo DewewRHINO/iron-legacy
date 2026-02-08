@@ -1,7 +1,8 @@
 [
   {
     "title": "Donación para becas",
-    "description": "",
+    "description": "Va directamente al fondo de becas estudiantiles y se otorga a estudiantes que se gradúan para cubrir matrícula y costos educativos.",
+    "supporting": "Tu donación ayudará directamente a que un estudiante asista a la universidad.",
     "image": {
       "url": "images/Scholarship-Donation.png",
       "width": 240,
@@ -12,7 +13,8 @@
   },
   {
     "title": "Donación general",
-    "description": "",
+    "description": "Ayuda a financiar programas de mentoría, talleres y eventos que hacen posible el programa de becas.",
+    "supporting": "Tu donación apoyará a la organización y expandirá nuestros programas.",
     "image": {
       "url": "images/General-Donation.png",
       "width": 240,

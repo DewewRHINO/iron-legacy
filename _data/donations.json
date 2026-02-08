@@ -1,7 +1,8 @@
 [
   {
     "title": "Scholarship Donation",
-    "description": "",
+    "description": "Goes directly into the student scholarship fund and is awarded to graduating seniors for tuition and education costs.",
+    "supporting": "Your gift will directly help a student attend college.",
     "image": {
       "url": "images/Scholarship-Donation.png",
       "width": 480,
@@ -12,7 +13,8 @@
   },
   {
     "title": "General Donation",
-    "description": "",
+    "description": "Helps run mentoring programs, workshops, and events that make the scholarship program possible.",
+    "supporting": "Your gift will support the organization and expand our programs.",
     "image": {
       "url": "images/General-Donation.png",
       "width": 480,
