@@ -45,6 +45,7 @@ Even if you’re unsure, apply. Your story matters.
     	<div class="faq-section-body">
     		<p>To help you prepare, the application will ask for:</p>
     		<ul>
+    		<li>Personal information</li>
     			<li>Parental consent if you are under 18 years old</li>
     			<li>Your family’s estimated annual income</li>
     			<li>Essay responses</li>

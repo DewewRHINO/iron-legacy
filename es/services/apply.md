@@ -45,6 +45,7 @@ Aunque no estés seguro(a), aplica. Tu historia importa.
     	<div class="faq-section-body">
     		<p>Para que te prepares, la solicitud te pedirá:</p>
     		<ul>
+    		<li>Información personal</li>
     			<li>Consentimiento de tus padres/tutores si tienes menos de 18 años</li>
     			<li>Ingreso anual estimado de tu familia</li>
     			<li>Respuestas a ensayos</li>
