@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var endDate = new Date("2026-02-16T00:00:00Z");
+  var endDate = new Date("2026-04-13T00:00:00Z");
   function updateCountdown() {
     var now = new Date();
     var diff = endDate - now;

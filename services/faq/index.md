@@ -7,57 +7,105 @@ permalink: /services/faq/
 
 # Frequently Asked Questions
 
-Frequently asked questions about the Iron Legacy 😲
+Find answers to common questions about Iron Legacy scholarships, eligibility, donations, and school partnerships.
 
-### Q: How is the Award Transfer? (From Iron Legacy to High School Student)
+<div class="faq-accordion">
 
-**A:** The award is directly transferred to the recipient high school student's institution or provided in a manner that ensures it supports their educational journey.
+  <details class="faq-section">
+    <summary>Scholarship &amp; Applications</summary>
 
-### Q: Eligibility Household Income?
+    <div class="faq-section-body">
+      <h4>How is the award transferred?</h4>
+      <p>The award is directly transferred to the recipient high school student’s institution or provided in a way that supports their educational journey.</p>
 
-**A:** There is no strict income requirement, but preference may be given to students from lower-income households who demonstrate financial need.
+      <h4>How is the grading process? (Who? When? Criteria?)</h4>
+      <ul>
+        <li><strong>Who:</strong> A panel of unbiased reviewers evaluates applications.</li>
+        <li><strong>When:</strong> Applications are reviewed after the submission deadline, with results announced at a designated time.</li>
+        <li>
+          <strong>Criteria:</strong>
+          <ul>
+            <li>Spelling &amp; grammar</li>
+            <li>Critical thinking and depth</li>
+            <li>Authenticity – How genuine and heartfelt their essay is</li>
+            <li>Overall quality – Clarity, structure, and persuasiveness of the essay</li>
+          </ul>
+        </li>
+        <li><strong>Word count:</strong> 500 words maximum per prompt</li>
+      </ul>
 
-### Q: Give Butter? (Explain/clarify the intention for this route of donation < $5,000.00)
+      <h4>Who were our previous winners?</h4>
+      <p>Previous winners have come from a variety of high schools. We can provide a list of past recipients upon request while maintaining student privacy.</p>
+    </div>
 
-**A:** GiveButter is our platform for smaller donations under $5,000. It allows individuals and groups to contribute easily and securely to support our scholarship program.
+  </details>
 
-### Q: PayPal (More Organizational Donation/Exceeding More Than $5,000.00 Buckaroos)?
+  <details class="faq-section">
+    <summary>Eligibility</summary>
 
-**A:** For larger donations exceeding $5,000, PayPal is our preferred method to ensure secure processing and proper tracking of organizational contributions.
+    <div class="faq-section-body">
+      <h4>What are the eligibility requirements students must meet?</h4>
+      <p>To apply, students must:</p>
+      <ul>
+        <li>Be a current high school senior</li>
+        <li>Reside in La Puente (within the geographic boundaries shown in the application map)</li>
+        <li>Demonstrate financial need</li>
+        <li>Plan to pursue post-secondary education, including private colleges, trade schools, community colleges, or four-year universities</li>
+      </ul>
 
-### Q: Is it Race/Ethnicity Focused?
+      <h4>Is it race/ethnicity focused?</h4>
+      <p>No. Any high school senior can apply, regardless of race or ethnicity. We believe in equal opportunity for all.</p>
 
-**A:** **No.!** Any high school senior can apply, regardless of race or ethnicity. We believe in equal opportunity for all.
+      <h4>Eligibility household income?</h4>
+      <p>There is no strict income requirement, but preference may be given to students from lower-income households who demonstrate financial need.</p>
 
-### **Note:**
+      <h4>Do I need to be a U.S. citizen or have legal immigration status to apply?</h4>
+      <p>No. Citizenship or immigration status is not required. Students must simply live in La Puente and meet the scholarship eligibility requirements.</p>
 
-- We are a **501(c)(3)** certified nonprofit organization.
-- We are also partnered with **LPMA**.
+      <h4>Is it school district focused?</h4>
+      <p>No. We accept applications from high school seniors who reside in La Puente. Please refer to the map included in the application to verify that you live within the geographic boundaries. Students may attend any school district as long as they meet the residency requirement.</p>
+    </div>
 
-### Q: Is there a POC dedicated to college and career counseling?
+  </details>
 
-**A:** We collaborate with school counselors and career advisors, but we encourage students to leverage their high school’s resources for personalized guidance.
+  <details class="faq-section faq-section-left">
+    <summary>Donations &amp; Giving</summary>
 
-### Q: Can we drop off these two flyers for their review?
+    <div class="faq-section-body">
+      <h4>What platforms do you use for donations?</h4>
+      <ul>
+        <li><strong>GiveButter:</strong> It allows individuals, groups, and corporations to give easily and securely while helping us track and manage donations.</li>
+        <li><strong>PayPal:</strong> Donations made through this platform support operational and logistical needs such as certificate paper, printing supplies, award frames, and other materials required to administer the scholarship program.</li>
+      </ul>
 
-**A:** Yes! We’d love for the counselors or administrators to review them. Let us know the best way to coordinate the drop-off.
+      <h4>What if I can’t find Iron Legacy on a donation platform or database?</h4>
+      <p>As a 501(c)(3) nonprofit organization, Iron Legacy is automatically enrolled in most donation databases and workplace giving platforms and can typically be searched using our EIN. If you are unable to locate us on your or your company’s preferred donation platform, please reach out to us directly and we will be happy to assist.</p>
+      <p><strong>EIN:</strong> 99-3675851</p>
+    </div>
 
-### Q: Who Were Our Previous Winners? (Student Name?? Which High School?)
+  </details>
 
-**A:** Previous winners have come from a variety of high schools. We can provide a list of past recipients upon request while maintaining student privacy.
+  <details class="faq-section">
+    <summary>Schools &amp; Counseling</summary>
 
-### Q: Is It School District Focused?
+    <div class="faq-section-body">
+      <h4>Is there a point of contact dedicated to college and career counseling?</h4>
+      <p>We collaborate with school counselors and career advisors, and we encourage students to leverage their high school’s resources for personalized guidance.</p>
 
-**A:** No, we accept applications from high school seniors regardless of their school district.
+      <h4>Can we drop off flyers for your review?</h4>
+      <p>Yes. We’d love for counselors or administrators to review them. Please reach out and we’ll coordinate the best way to drop them off.</p>
+    </div>
 
-### Q: How Is the Grading Process? (Who? When? Criteria?)
+  </details>
 
-- **Who:** A panel of unbiased reviewers evaluates applications.
-- **When:** Applications are reviewed after the submission deadline, with results announced at a designated time.
-- **Criteria:**
-  1. **Spelling & Grammar** (Up to 4 errors allowed)
-  2. **Community Impact** – How the student has contributed to their community
-  3. **Authenticity** – How genuine and heartfelt their essay is
-  4. **Overall Quality** – Clarity, structure, and persuasiveness of the essay
-- **Word Count:** 1,400 words maximum
-- **Non-Biased Review Process** to ensure fairness in selection.
+  <details class="faq-section">
+    <summary>Organization Info</summary>
+
+    <div class="faq-section-body">
+      <h4>What type of organization is Iron Legacy?</h4>
+      <p>Iron Legacy is a 501(c)(3) certified nonprofit organization and is officially registered with the state of California.</p>
+    </div>
+
+  </details>
+
+</div>

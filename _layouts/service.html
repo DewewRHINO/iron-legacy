@@ -28,8 +28,8 @@ bodyClass: "page-service"
             {% assign donate_benefits_title_default = "Después de donar, recibirás:" %}
           {% endif %}
 
-          <div class="donate-page">
-            <div class="donate-hero text-center">
+            <div class="donate-page">
+            <div class="donate-hero">
               <h1 class="donate-title">{{ page.donate_title | default: page.title }}</h1>
               {% if page.donate_subtitle %}
                 <p class="donate-subtitle">{{ page.donate_subtitle }}</p>
@@ -50,7 +50,7 @@ bodyClass: "page-service"
               <div class="donate-panel">
                 <div class="row g-0 donate-panel-row">
                   {% for donation in donations %}
-                    <div class="col-12 col-md-6 donate-panel-col">
+                    <div class="col-12 col-lg-6 donate-panel-col">
                       <div class="donate-card h-100">
                         {% if donation.image %}
                           <div class="donate-card-icon" aria-hidden="true">
